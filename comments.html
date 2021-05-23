@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Comments</title>
+    <link href="websystems.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <nav id="nav">
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="past.html">Past</a></li>
+            <li><a href="future.html">Future</a></li>
+            <li>
+                <a class="active" href="comments.html">Comments</a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <main class="main">
+
+        <div class="content-container">
+            <header class="banner">
+                <div>
+                    <h1>Comments</h1>
+                    <hr>
+                    <h2>Reflecting on the website design choices</h2>
+                </div>
+
+            </header>
+
+            <section class="content-section">
+
+                <section class="panel">
+                    <article class="col">
+
+                        <h1>Technical Aspects</h1>
+
+
+                        <p>The file structure follows the required standard with the addition of an "assets" directoy
+                            that stores anything used in the HTML. Ideally this would also include the stylesheet, but
+                            for now it just contains images.</p>
+
+
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>File/Directory<br></th>
+                                    <th>Type</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>index.html</td>
+                                    <td>HTML file</td>
+                                    <td>Homepage with a brief introduction to the website</td>
+                                </tr>
+                                <tr>
+                                    <td>past.html<br></td>
+                                    <td>HTML file</td>
+                                    <td>Description of some of my past experiences in computing</td>
+                                </tr>
+                                <tr>
+                                    <td>future.html<br></td>
+                                    <td>HTML file</td>
+                                    <td>Overview of my future goals for a career in computing</td>
+                                </tr>
+                                <tr>
+                                    <td>comments.html</td>
+                                    <td>HTML file</td>
+                                    <td>A reflection on the website design </td>
+                                </tr>
+                                <tr>
+                                    <td>websystems.css</td>
+                                    <td>CSS file</td>
+                                    <td>Stylesheet for all HTML pages for this website </td>
+                                </tr>
+                                <tr>
+                                    <td>assets</td>
+                                    <td>dir</td>
+                                    <td>Directory containing images that were used in this website<br></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <h2>Structure</h2>
+                        <p>A common structure that takes advantage of HTML5 semantic elements has been used. The body is
+                            split into three primary rows, with the nvigation menu as the top row, a main section in the
+                            middle row, and a footer as the bottom row. </p>
+                        <p>The main section has a single child, which is a div that serves as a wrapper for the rest of
+                            the main content. This containment scheme allows for the floating subpage that can be most
+                            clearly seen on larger screens. The subpage itself is further split into multiple rows, with
+                            the top row serving as the page header in a banner style. There are then any number of
+                            subsections which are divs with the class "panel", which are rows that segregate subcontent.
+                        </p>
+
+
+
+                        <h2>Selectors</h2>
+                        <p>A wide variety of selectors were used, so a small but representative sample have been
+                            summarised here in the following table.</p>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Selector</th>
+                                    <th>Type</th>
+                                    <th>Elements</th>
+                                    <th>Explanation</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>nav</td>
+                                    <td>id</td>
+                                    <td>nav</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>menu</td>
+                                    <td>class</td>
+                                    <td>ul</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>main</td>
+                                    <td>class<br></td>
+                                    <td>main</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>content-container</td>
+                                    <td>class</td>
+                                    <td>div</td>
+                                    <td>nonsemantic</td>
+                                </tr>
+                                <tr>
+                                    <td>banner</td>
+                                    <td>class</td>
+                                    <td>header</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>content-section</td>
+                                    <td>class</td>
+                                    <td>section</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>panel</td>
+                                    <td>class</td>
+                                    <td>section</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>row</td>
+                                    <td>class</td>
+                                    <td>section</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>col</td>
+                                    <td>class</td>
+                                    <td>article, aside, figure</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>image-container</td>
+                                    <td>class</td>
+                                    <td>figure</td>
+                                    <td>positioning</td>
+                                </tr>
+                                <tr>
+                                    <td>footer-nav</td>
+                                    <td>class</td>
+                                    <td>nav</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>ul</td>
+                                    <td>element</td>
+                                    <td>-</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>span</td>
+                                    <td>element</td>
+                                    <td>-</td>
+                                    <td>text highlighting</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </article>
+                </section>
+                <hr>
+                <section class="panel">
+                    <article class="col">
+                        <h1>Aesthetics</h1>
+                        <p>It's difficult to make exciting features without JavaScript, so I tried to work within the
+                            liits of CSS to make something clean and modern. I sacrifice IE11 performance for aesthetic
+                            by making liberal use of advanced CSS such as flex-box and grid.
+
+                        </p>
+                        <h2>Interactivity</h2>
+                        <p>
+                            The UI is supposed to appear interactive instead of being a static site. To acheive this, I
+                            have used box-shadows and border-radius to give a dashboard appearance to the main content.
+                            All clickable items will respond when the mouse hovers over them by showing a pointer for
+                            the cursor. The navigation menu also will respond by highlighting the item underneath the
+                            cursor and it will use a short animation to transition between states. The presentation of
+                            elements are reponsive to window sizes, giving life to the page.
+                        </p>
+                        <h2>Colour</h2>
+                        <p>
+                            I am of the belief that "less is more". As such, I have used a very basic colour scheme. The
+                            navigation menu is just a near-black background with white text. This is all it needs to be,
+                            because this navigation menu does not do anything exciting and should not be the focus of
+                            attention. For a similar reason, the footer is also quite basic and uses a midnight blue.
+                        </p>
+                        <p>
+                            The footer colour nicely complements the warm sunset theme I was going for. This is een
+                            primarily in the banner, which is front and center for each page and uses warm colours that
+                            set a comfortable mood. The rest of the main content is also quite minimal. I have gone with
+                            a basic off white background for the viewing content, which provides good contrast without
+                            using a light theme without burning the eyes.
+                        </p>
+                        <p>Primary section headings are a dark pastel green and subheadings are the midnight blue.
+                            Tables do not need to be flasy,because their primary purpose is to convey data. A simple
+                            alternating grey and white theme is enough to provide pleasing aesthetics that help reading
+                            the table without being distracting.
+                        </p>
+                        <h2>Spacing and font</h2>
+                        <p>I have used a sans-serif font family, which are widely accepted to be the most aesthetic on
+                            electronic devices. I have tried to use logical spacing that gives strongly defined
+                            structure to elements and other content. This improves readability and interpretability.</p>
+
+
+                    </article>
+
+
+                </section>
+                <hr>
+                <section class="panel">
+                    <article class="col">
+
+                        <h1>Accessibility</h1>
+
+                        <p>Best practices for HTML and CSS are documented by the World Wide Web Consortium (W3C).
+                            The W3C Web Accessibility Initiative provides a set of standards for web accessibility
+                            and guidelines about to meet these standards. This initiative was used to guide the
+                            development of this website.
+                        </p>
+
+
+                        <p>The intention of ensuring web accessibility means that people with disabilities are able
+                            to
+                            interact
+                            with a website without significant limitations. These include accomodations for a wide
+                            range of
+                            impairments, such as vision, auditory, physical, etc.</p>
+
+
+                        <h2>Text alternatives</h2>
+
+
+                        <p>All non-text content has alternative text and this is done in multiple ways. For example,
+                            all
+                            images
+                            have both an "alt" description added in the html as well as descriptive captions.</p>
+
+
+                        <p>The use of semantic elements available in HTML5 allow the meaning and purpose of elements
+                            to be
+                            clearly identified by the browser and screen readers. Rather than having a a &lt;div&gt;
+                            element
+                            with the class="main", the &lt;main&gt; element is used. Other semantic elements I
+                            used
+                            include
+                            &lt;nav&gt;, &lt;main&gt;, &lt;section&gt;, &lt;header&gt;, and &lt;footer&gt;. Using
+                            these in
+                            the
+                            appropriate logical order gives a webpage a well defined structure without the need for
+                            CSS
+                            classes.
+                        </p>
+
+                        <section class="row">
+                            <article class="col">
+                                <h2>Responsive sizing and adaptive positioning</h2>
+
+
+                                <p>The use of advanced CSS such as media-queries, grid, and flex-box ensure that
+                                    elements can berestructured to best suit the available space. Using relative units,
+                                    such as %, em, rem, vw, vh for font sizes as well as the height and width of
+                                    elements allows adaptive sizing that can appropriate accomodate screen sizes and
+                                    zoom.
+                                </p>
+
+
+                                <p>
+                                    The use of padding, margins, or flexbox positioning alow text to have nice spacing
+                                    from
+                                    each
+                                    other
+                                    and borders, these improve readability.
+                                    Media queries will adjust some selectors sepneding on the window dimensions. This
+                                    allows
+                                    the
+                                    website
+                                    to adjust for smaller or bigger screen sizes without any reduction in accessibility.
+                                    Flexbox has been used creatively to keep sections ordered appropriately depending on
+                                    the
+                                    screen
+                                    dimensions</p>
+                            </article>
+                            <figure class="col image-container">
+                                <img id="hbox-img" src="assets/mobile-site.png"
+                                    alt="A screenshot of the website when viewed from a mobile device">
+                                <figcaption>A screenshot of the website when viewed from a mobile device</figcaption>
+                            </figure>
+                        </section>
+
+                        <h2>Colour</h2>
+
+
+                        <p>The colour scheme considered colour contrast such that all elements and text are clearly
+                            visible. The color scheme also has been chosen without color clashes that may be unreadable
+                            by people with color vision impairments.</p>
+
+
+                        <h2>UI and navigation</h2>
+
+
+                        <p> The website has been designed so that it can be fully functional using just a keyboard or
+                            just a mouse. All navigation links are defined in semantic nav HTML elements and use actual
+                            text rather than images. The navigation menu is consistent between pages, and there is a
+                            second navigation option in the footer. Anything that is clickable is clearly highlighted,
+                            so a user will not have unexpected suprises, moreover, by default, the pressing backspace on
+                            the keyboard will not behave like clicking a back button on the browser.
+                        </p>
+
+
+                    </article>
+
+                </section>
+            </section>
+        </div>
+
+    </main>
+
+    <footer id="footer">
+        <div class="footer-row">
+            <nav id="footer-nav" class="col">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="past.html">Past</a></li>
+                    <li><a href="future.html">Future</a></li>
+                    <li><a href="comments.html">Comments</a></li>
+                </ul>
+            </nav>
+        </div>
+        <hr>
+        <div class="footer-row">
+            <p><span>Website by &copy Simon McManis</span></p>
+        </div>
+    </footer>
+</body>
+
+</html>
